@@ -6,9 +6,7 @@ var folder = path.join(__dirname, 'public'); //Definiendo que hay una carpeta pu
 app.use(express.static(folder)) //Use la carpeta public
 
 
-// app.listen(3000, function () {
-//     console.log('Example app listening on port 3000!');
-// });
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!');
+});
 
-var port_number = server.listen(process.env.PORT || 80);
-app.listen(port_number);
